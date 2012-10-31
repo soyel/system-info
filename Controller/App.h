@@ -26,7 +26,6 @@ namespace Controller {
             App(int argc, char *argv[]);
             App(const App& orig);
             virtual ~App();
-            View::Renderer getRenderer();
             void showUsage();
             void showVersion();
             void argumentParse(int argc, char *argv[]);

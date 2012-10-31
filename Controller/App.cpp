@@ -25,10 +25,6 @@ namespace Controller {
     App::~App() {
     }
 
-    View::Renderer App::getRenderer() {
-        return v_renderer;
-    }
-
     void App::argumentParse(int argc, char *argv[]) {
         int c;
 
