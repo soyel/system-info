@@ -18,8 +18,7 @@
  */
 int main(int argc, char** argv) {
 
-    App app(argc, argv);
-    app.getRenderer().render();
+    Controller::App app(argc, argv);
 
     return 0;
 }

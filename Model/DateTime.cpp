@@ -13,12 +13,13 @@
 
 #include "DateTime.h"
 
-DateTime::DateTime() {
-}
+namespace Model {
+    DateTime::DateTime() {
+    }
 
-DateTime::DateTime(const DateTime& orig) {
-}
+    DateTime::DateTime(const DateTime& orig) {
+    }
 
-DateTime::~DateTime() {
+    DateTime::~DateTime() {
+    }
 }
-

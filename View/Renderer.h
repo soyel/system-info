@@ -16,15 +16,21 @@
 
 #include <iostream>
 
-class Renderer {
-    public:
-        Renderer();
-        Renderer(const Renderer& orig);
-        virtual ~Renderer();
-        void render();
-    private:
+using std::cout;
+using std::endl;
 
-};
+namespace View {
+    class Renderer {
+        public:
+            Renderer();
+            Renderer(const Renderer& orig);
+            virtual ~Renderer();
+            void renderHelp();
+            void renderVersion();
+        private:
+
+    };
+}
 
 #endif	/* RENDERER_H */
 

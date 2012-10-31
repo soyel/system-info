@@ -13,14 +13,22 @@
 
 #include "Renderer.h"
 
-Renderer::Renderer() {
-}
+namespace View {
+    Renderer::Renderer() {
+    }
 
-Renderer::Renderer(const Renderer& orig) {
-}
+    Renderer::Renderer(const Renderer& orig) {
+    }
 
-Renderer::~Renderer() {
-}
+    Renderer::~Renderer() {
+    }
 
-void Renderer::render() {
+    void Renderer::renderHelp() {
+        cout << "HELP" << endl;
+    }
+
+    void Renderer::renderVersion() {
+        cout << "system-info:" << endl;
+        cout << "\tv0.1" << endl;
+    }
 }

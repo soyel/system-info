@@ -13,12 +13,13 @@
 
 #include "System.h"
 
-System::System() {
-}
+namespace Model {
+    System::System() {
+    }
 
-System::System(const System& orig) {
-}
+    System::System(const System& orig) {
+    }
 
-System::~System() {
+    System::~System() {
+    }
 }
-

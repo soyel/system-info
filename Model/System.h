@@ -19,20 +19,22 @@
 
 #include "DateTime.h"
 
-using namespace std;
+using std::string;
 
-class System {
-    public:
-        System();
-        System(const System& orig);
-        virtual ~System();
-    private:
-        string hostname;
-        string kernel;
-        DateTime last_boot;
-        DateTime now;
-        int update;
-};
+namespace Model {
+    class System {
+        public:
+            System();
+            System(const System& orig);
+            virtual ~System();
+        private:
+            string hostname;
+            string kernel;
+            DateTime last_boot;
+            DateTime now;
+            int update;
+    };
+}
 
 #endif	/* SYSTEM_H */
 

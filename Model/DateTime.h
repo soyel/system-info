@@ -14,14 +14,20 @@
 #ifndef DATE_TIME_H
 #define	DATE_TIME_H
 
-class DateTime {
-    public:
-        DateTime();
-        DateTime(const DateTime& orig);
-        virtual ~DateTime();
-    private:
-
-};
+namespace Model {
+    class DateTime {
+        public:
+            DateTime();
+            DateTime(const DateTime& orig);
+            virtual ~DateTime();
+        private:
+            int year;
+            int month;
+            int day;
+            int hour;
+            int minute;
+    };
+}
 
 #endif	/* DATE_TIME_H */
 

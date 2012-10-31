@@ -14,19 +14,27 @@
 #ifndef APP_H
 #define	APP_H
 
+#include <string>
+#include <getopt.h>
+
 #include "../Model/System.h"
 #include "../View/Renderer.h"
 
-class App {
-    public:
-        App(int argc, char *argv[]);
-        App(const App& orig);
-        virtual ~App();
-        Renderer getRenderer();
-    private:
-        Renderer v_renderer;
-        System m_system;
-};
+namespace Controller {
+    class App {
+        public:
+            App(int argc, char *argv[]);
+            App(const App& orig);
+            virtual ~App();
+            View::Renderer getRenderer();
+            void showUsage();
+            void showVersion();
+            void argumentParse(int argc, char *argv[]);
+        private:
+            View::Renderer v_renderer;
+            Model::System m_system;
+    };
+}
 
 #endif	/* APP_H */
 
