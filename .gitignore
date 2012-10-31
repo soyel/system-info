@@ -2,6 +2,7 @@
 build
 dist
 nbproject
+.dep*
 
 # Compiled Object files
 *.slo
