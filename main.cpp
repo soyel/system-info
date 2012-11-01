@@ -16,7 +16,7 @@
 /*
  * Main
  */
-int main(int argc, char** argv) {
+int main(int argc, char* argv[]) {
 
     Controller::App app(argc, argv);
 
