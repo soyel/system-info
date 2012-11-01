@@ -11,13 +11,14 @@
  * Created on October 30, 2012, 11:02 PM
  */
 
-#ifndef APP_H
-#define	APP_H
+#ifndef CONTROLLER_APP_H
+#define	CONTROLLER_APP_H
 
 #include <string>
 #include <getopt.h>
 
-#include "../Model/System.h"
+#include "ArgumentHandler.h"
+#include "../Model/App.h"
 #include "../View/Renderer.h"
 
 namespace Controller {
@@ -28,12 +29,12 @@ namespace Controller {
             virtual ~App();
             void showUsage();
             void showVersion();
-            void argumentParse(int argc, char *argv[]);
         private:
+            ArgumentHandler c_argHandler;
             View::Renderer v_renderer;
-            Model::System m_system;
+            Model::App m_app;
     };
 }
 
-#endif	/* APP_H */
+#endif	/* CONTROLLER_APP_H */
 
